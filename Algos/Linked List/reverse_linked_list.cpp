@@ -41,6 +41,9 @@ void print(node *head){
 
 void reverse(node* &head){
 
+	if(head==NULL||head->next==NULL)
+		return;
+
 	node* current = head;
 	node* previous = NULL;
 	node* n;
